@@ -1,0 +1,90 @@
+.top-header {
+    border-top: 10px solid black;
+}
+
+.top-header .container-fluid .row [class*="col-"]{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.top a {
+    font: bold 21px/1 'proxima_nova_rgbold', Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 5px 150px 10px 20px;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+#top-lf a {
+    background: black;
+    z-index: 5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#top-lf a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 0;
+    height: 0;
+    border-top: 37px solid black !important;
+    border-right: 35px solid transparent;
+}
+
+#top-mid a {
+    /* font: bold 21px/1 'proxima_nova_rgbold', Arial, Helvetica, sans-serif;
+    color: #fff; */
+    background: palevioletred;
+    /* padding: 5px 257px 10px 20px;
+    display: inline-block;
+    position: relative;
+    text-decoration: none; */
+    z-index: 4;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#top-mid a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 0;
+    height: 0;
+    border-top: 37px solid palevioletred !important;
+    border-right: 35px solid transparent;
+}
+
+#top-rt a {
+    /* font: bold 21px/1 'proxima_nova_rgbold', Arial, Helvetica, sans-serif;
+    color: #fff; */
+    background: orange;
+    /* padding: 5px 257px 10px 20px;
+    display: inline-block;
+    position: relative;
+    text-decoration: none; */
+    z-index: 3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+#top-rt a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 0;
+    height: 0;
+    border-top: 37px solid orange !important;
+    border-right: 35px solid transparent;
+}
+
+.nav-link:hover {
+    color: yellow;
+}
+
+/* .active-top-lf a {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+
