@@ -1,0 +1,266 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* HEADER */
+.top-header {
+    border-top: 10px solid #5384CA;
+}
+
+.top-header .container-fluid .row [class*="col-"]{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.top-row {
+    background-color: #5384CA;
+}
+
+.top a {
+    font: bold 21px/1 'proxima_nova_rgbold', Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 5px 150px 10px 30px;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+#top-lf a {
+    background: #5384CA;
+    z-index: 5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#top-lf a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -35px;
+    width: 0;
+    height: 0;
+    border-top: 37px solid #5384CA !important;
+    border-right: 35px solid transparent;
+}
+
+#top-mid a {
+    background: #83A1CF;
+    z-index: 4;
+}
+
+#top-mid a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -35px;
+    width: 0;
+    height: 0;
+    border-top: 37px solid #83A1CF !important;
+    border-right: 35px solid transparent;
+}
+
+#top-rt a {
+    background: #97b1d8;
+    z-index: 3;
+}
+#top-rt a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -35px;
+    width: 0;
+    height: 0;
+    border-top: 37px solid #97b1d8 !important;
+    border-right: 35px solid transparent;
+}
+
+.nav-link:hover {
+    color: yellow;
+}
+
+/* .active-top-lf a {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+
+/* SECOND ROW */
+.s-row {
+    background-image: url("../images/front-house.jpg");
+    height: 752px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin: 0;
+}
+
+/* THIRD ROW */
+.trd-row {
+    background-color: #81853e;
+} 
+
+#event-details-heading {
+    float: right;
+}
+
+#event-description, #event-location {
+    margin: 10% 5% 5% 5%;
+    text-align: center;
+}
+
+#event-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.accent {
+    font-size: x-large;
+}
+
+.sm-text {
+    float: left;
+    color: #282921a6;
+    font-size: 52px;
+    line-height: 106px;
+    font-family: 'proxima_novathin', Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+
+.bg-text {
+    color: #81853e;
+    font-size: 106px;
+    line-height: 1;
+    /* margin-left: -26px; */
+    font-family: 'proxima_novathin', Arial, Helvetica, sans-serif;
+    text-shadow: -3px 2px 1px #282921;
+    writing-mode: tb;
+    text-orientation: mixed;
+}
+
+/* SIGN UP */
+
+#signup-heading {
+    margin: 0 0 0 2em;
+
+}
+
+.signup-bg-text {
+    color: #6c6f39;
+    font-size: 106px;
+    line-height: 1;
+    /* margin-left: -26px; */
+    font-family: 'proxima_novathin', Arial, Helvetica, sans-serif;
+    text-shadow: -3px 2px 1px #282921;
+    writing-mode: tb;
+}
+
+#form-container {
+    margin-top: 4em;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form-group {
+    margin: 15px;
+}
+
+#form-row {
+    justify-content: center;
+}
+
+#submit {
+    background-color: #81853e;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#submit:hover {
+    box-shadow: none;
+}
+
+#first-name, #last-name, #item {
+    background-color: #81853e;
+    border: 1px solid #282921;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* FOURTH ROW */
+.frth-row {
+    color: white;
+    background-color: #282921;
+    height: 400px;
+}
+
+.address-sm-text {
+    float: left;
+    color: #616336;
+    font-size: 52px;
+    line-height: 106px;
+    font-family: 'proxima_novathin', Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+
+.address-bg-text {
+    color: #282921;
+    font-size: 106px;
+    line-height: 1;
+    font-family: 'proxima_novathin', Arial, Helvetica, sans-serif;
+    text-shadow: -3px 2px 1px #616336;
+    writing-mode: tb;
+}
+
+/* FIFTH ROW */
+.ffth-row {
+    background-color: #6C6F3B;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#attendees {
+    margin-top: 4em;
+    margin-right: 3em;
+}
+
+thead, tbody { display: block; }
+
+tbody {
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 0 0 11px #81853e inset;
+    font-size: 14px;
+    background-color: #282921;
+    color: #81853e;
+    text-align: center;
+}
+
+table {
+    width: 100%; /* Optional */
+}
+
+tbody td, thead th {
+    width: 20%;  /* Optional */
+}
+
+.table > tbody > tr > td,
+.table > thead > tr > th {
+    border: none
+}
+
+thead {
+    border-bottom: 2px solid #282921;
+    text-align: center
+}
+
+.details, .map {
+    margin: auto;
+}
+
+.details {
+    padding: 1em;
+}
