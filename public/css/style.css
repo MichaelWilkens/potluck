@@ -1,3 +1,7 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
 /* HEADER */
 .top-header {
     border-top: 10px solid #5384CA;
@@ -81,8 +85,7 @@
 /* SECOND ROW */
 .s-row {
     background-image: url("../images/front-house.jpg");
-    /* width: 100%; */
-    height: 700px;
+    height: 752px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -98,9 +101,21 @@
     float: right;
 }
 
-#event-details, #event-location {
-    margin-top: 25%;
-    margin-left: 50%;
+#event-description, #event-location {
+    margin: 10% 5% 5% 5%;
+    text-align: center;
+}
+
+#event-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.accent {
+    font-size: x-large;
 }
 
 .sm-text {
@@ -147,8 +162,8 @@
 form {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .form-group {
@@ -163,6 +178,17 @@ form {
     background-color: #81853e;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+#submit:hover {
+    box-shadow: none;
+}
+
+#first-name, #last-name, #item {
+    background-color: #81853e;
+    border: 1px solid #282921;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 
 /* FOURTH ROW */
 .frth-row {
@@ -192,29 +218,49 @@ form {
 /* FIFTH ROW */
 .ffth-row {
     background-color: #6C6F3B;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #attendees {
     margin-top: 4em;
+    margin-right: 3em;
 }
 
 thead, tbody { display: block; }
 
 tbody {
-    height: 200px;       /* Just for the demo          */
-    overflow-y: auto;    /* Trigger vertical scroll    */
-    overflow-x: hidden;  /* Hide the horizontal scroll */
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 0 0 11px #81853e inset;
+    font-size: 14px;
+    background-color: #282921;
+    color: #81853e;
+    text-align: center;
 }
 
 table {
     width: 100%; /* Optional */
-
 }
 
 tbody td, thead th {
     width: 20%;  /* Optional */
 }
 
-td {
-    border: none;
+.table > tbody > tr > td,
+.table > thead > tr > th {
+    border: none
+}
+
+thead {
+    border-bottom: 2px solid #282921;
+    text-align: center
+}
+
+.details, .map {
+    margin: auto;
+}
+
+.details {
+    padding: 1em;
 }
