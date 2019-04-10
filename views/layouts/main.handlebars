@@ -59,25 +59,57 @@
             </div>
         </div>
     </div>
-    <div class="row frth-row">
-        <div class="col-5">
-            <div class="row">
-                <h3>
-                    <span>The</span>
-                    <span>Address</span>
-                </h3>
+    <div class="row ffth-row">
+        <div class="container col-1" id="signup-heading">
+            <div class="row" id="sign-up">
+                <h1>
+                    <span class="signup-bg-text">Sign up</span>
+                </h1>
             </div>
-            <div class="row" id="event-location">
-                <p>745 18th Street Santa Monica</p>
+        </div>
+        <div class="container col-3" id="form-container">
+            <div class="row" id="form-row">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="first-name" placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="item" placeholder="What food/drink will you bring?">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id='submit' class="btn">Sign up!</button>
+                    </div>
+                </form>
+                <p id='error-message' class='text-danger' style='display:none'>Please fill out all fields</p>
             </div>
-        <div class="col-5">
-            <div class="row" id="address-map">
-                {{!-- <img src="../../public/images/map-placeholder.jpg" height="100%"> --}}
+        </div>
+        <div class="col-7">
+            <div class="row" id="attendees">
+                {{{body}}}
             </div>
         </div>
     </div>
+    </div>
+    <div class="row frth-row">
+        <div class="col">
+            <div class="row">
+                <h1>745 18th Street, Santa Monica, CA 90402</h1>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row" id="event-details-heading">
+                <h3>
+                    <span class="address-bg-text">Address</span>
+                </h3>
+            </div>
+        </div>
+    </div>
+    </div>
 
-   
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
